@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function()
+        {
+            document.getElementById("slider").addEventListener("change", 
+                            function()
+                            {
+                                document.getElementById("slideOut").innerHTML = document.getElementById("slider").value;
+                            }
+                                                                ,false)
+        }
+    </script>
+</head>
+<body>
+    <form action="#">
+        <table>
+            <tr> 
+                <th>Choose a value of range:</th>
+                <td>
+                    <input type="range" id="slider" min="0" max="100">
+                    <output id="slideOut"></output>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
