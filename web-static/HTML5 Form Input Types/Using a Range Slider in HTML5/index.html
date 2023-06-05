@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getRate()
+        {
+            var sliderValue = document.getElementById("rating").value;
+            document.getElementById("slideOut").innerHTML = sliderValue;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <table>
+            <th>Please rate your JavaScript Skills</th>
+            <td>
+                <input type="range" id="rating" min="0" max="100" onchange="getRate()">
+                <output id="slideOut"></output>
+            </td>
+        </table>
+    </form>
+</body>
+</html>
