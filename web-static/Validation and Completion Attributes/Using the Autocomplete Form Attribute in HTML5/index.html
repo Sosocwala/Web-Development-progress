@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post" autocomplete="off">
+        <table >
+            <tr>
+                <td>Name:</td>
+                <td><input type="text" id="name" name="name" value="Enter name.." size="30"></td>
+            </tr>
+            <tr>
+                <td>Email Address:</td>
+                <td><input type="text" id="email" name="email" value="Enter email.." size="30"></td>
+            </tr>
+            <tr height="39">
+                <td>Password:</td>
+                <td><input type="password" id="pwd" name="pwd" size="15" maxlength="15"></td>
+            </tr>
+            <tr> 
+                <td>Comments:</td>
+                <td><textarea rows="15" cols="31" id="comment" name="comment" maxlength="250"></textarea></td>
+            </tr>
+            <tr>
+                <td height="39">Im Interested in:</td>
+                <td>
+                   <label for="hocky">Hocky</label>
+                   <input type="checkbox" name="hocky" id="hocky">
+                   <label for="golf">Golf</label>
+                   <input type="checkbox" name="golf" id="golf">
+                   <label for="rugby">Rugby</label>
+                   <input type="checkbox" name="rugby" id="rugby">
+                   <label for="netball">Netball</label>
+                   <input type="checkbox" name="netball" id="netball">
+               </td>
+            </tr>
+            <tr height="39">
+                <td>Subscribe to Newslettre:</td>
+                <td>
+                    <input type="radio" id="yes" name="suscribe">
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="No" name="suscribe">
+                    <label for="yes">No</label>      
+                </td>
+            </tr>
+            <tr height="39">
+               <td>Venue:</td>
+               <td>
+                   <select name="vanue" id="vanue">
+                       <option value="Qtn" id="Qtn">Queenstown</option>
+                       <option value="KWT" id="KWT">King Williams Town</option>
+                       <option value="EL" id="">East Landon</option>
+                       <option value="CC">Charthcart</option>
+                       <option value="Fs">Bloem</option>
+                   </select>
+               </td>
+            </tr>
+           </table>
+           <input type="submit" value="Click to Submit">
+        </form>
+
+        <form action="">
+            <table>
+                <tr><td><h1>Choices</h1></td></tr>
+                <tr>
+                    <td>Choose a color:</td>
+                    <td><input type="color" name="color" id="color"> </td>
+                </tr>
+            </table>
+        </form>
+</body>
+</html>
