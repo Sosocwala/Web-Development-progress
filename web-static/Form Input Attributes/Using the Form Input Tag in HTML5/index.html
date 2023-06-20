@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <form action="#" method="post">
-        <label for="name">Name:</label></label>
-        <input type="text" id="name" name="name">
+    <form action="#" method="post" name="personalDetails">
+        <label for="name">Names:</label></label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="lastName">Last Name:</label></label><br>
+        <input type="text" id="lastName" name="lastName"><br>
+        <label for="email">Email:</label></label><br>
+        <input type="text" id="email" name="email"><br>
+        <button type="submit">Submit</button>
     </form>
+    <br><br><br><br><br><br>
+    <label for="cell">Telephone Number:</label>
+    <input type="text" name="cell" id="cell" form="personalDetails"><!--the form has been used-->
 </body>
 </html>

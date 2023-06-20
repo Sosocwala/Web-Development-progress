@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function doIt()
+        {
+            var result = document.querySelectorAll("a[href]");
+            
+            for (var i = 0; i < result.length; i++)
+            {
+                document.getElementById("output").innerHTML += result[i] + "<br>";
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <a href="http:/www.google.com">Search Google</a><br>
+    <a href="http:/www.netflix.com">Search Netflix</a><br>
+    <a href="http:/www.gmail.com">Search Gmail</a><br>
+    <br><br>
+    <button id="doit" onclick="doIt()"> Do It</button><br>
+    
+    <span id="output"></span>
+</body>
+</html>

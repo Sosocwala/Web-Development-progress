@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function doIt()
+        {
+            var results = document.querySelector("div.article, div.note" );
+            document.getElementById("output").innerHTML = results.innerHTML;
+        }
+    </script>
+    <style>
+        .article{
+            width: 80px;
+            height: 60px;
+            background-color: chartreuse;
+        }
+        .note{
+            width: 80px;
+            height: 60px;
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <div class="article">This is a article</div><br>
+    <div class="note">This is a note</div><br>
+    <br>
+    <button id="btn" onclick="doIt()">Do it</button>
+    <br>
+    <span id="output"></span>  
+</body>
+</html>
