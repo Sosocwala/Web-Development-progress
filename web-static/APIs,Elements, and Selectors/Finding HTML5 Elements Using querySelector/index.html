@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text{
+            font-size: 20px;
+            color: coral;
+        }
+    </style>
+    <script>
+        function doIt()
+        {
+            var result = document.querySelector(".text")
+            document.getElementById("output").innerHTML = result.innerHTML
+        }
+    </script>
+</head>
+<body>
+    <span class="text">This is some text</span><br>
+    <span class="text">This is some more text</span><br>
+    <span class="text" id="output  ">his is even More text</span><br>
+    <br>
+    <button id="doit" onclick="doIt()">Do it</button> 
+</body>
+</html>
