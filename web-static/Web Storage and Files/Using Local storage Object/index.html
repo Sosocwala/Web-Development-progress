@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .output
+        {
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        var first, last, ofirst, olast;
+        window.onload = function()
+        {
+            first = document.getElementById("firstName");
+            last = document.getElementById("lastName");
+            ofirst = document.getElementById("fNameOut");
+            olast = document.getElementById("lNameOut");
+            document.getElementById("storeData").addEventListener("click", storeData, false);
+            document.getElementById("retrieveData").addEventListener("click", retrieveData, false);
+        }
+        function storeData()
+        {
+            localStorage.FirstName = first.value;
+            localStorage.LastName = last.value;
+        }
+        function retrieveData()
+        {
+            ofirst.innerHTML = localStorage.FirstName;
+            olast.innerHTML = localStorage.LastName;
+        }
+    </script>
+</head>
+<body>
+    <label for="firstName">First Name:</label><br>
+    <input type="text" name="firstName" id="firstName" placeholder="Enter your Fist Name"><br>
+    <label for="lasttName">Last Name:</label><br>
+    <input type="text" name="lasttName" id="lastName" placeholder="Enter your Last Name"><br>
+    <button id="storeData">Store Data</button><br>
+    <div class="output">
+         First Name: <output id="fNameOut"></output><br>
+         Last Name: <output id="lNameOut"></output><br>
+    </div>
+    <button id="retrieveData">Retrieve Data</button>
+</body>
+</html>
