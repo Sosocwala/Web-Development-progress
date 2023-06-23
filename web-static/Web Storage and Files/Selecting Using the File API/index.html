@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function handleFileSelect(evt){
+            var files = evt.target.files; //File List Objects
+
+            //Files is a fileList of file objects. List some properties.
+            var output = [];
+            for (var i = 0, f; f = files[i]; i++){
+                output.push("<li><strong>", escape(f.name), "<strong> (", f.type 
+            || "n/a",") -",
+                            f.size, "bytes, Last Modified:",
+                            f.lastModifiedDate ? f.lastModifiedDate.tolacaleDateString() : "n/a", 
+                                                                                        "</li>");
+            }
+            document.getElementById("list").innerHTML = "<ul>" + output.join("") + "/ul>";
+        }
+    </script>
+</head>
+<body>
+    <input type="file" name="files[]" id="files" multiple>
+    <output id="list"></output>>
+</body>
+</html>
