@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type=text/javascript>
+        function loadDayTime()
+        {
+            var imghttp = new XMLHttpRequest();
+            imghttp.onreadystatechange = function()
+            {
+                if (imghttp.readyState == 4 && imghttp.status == 200)
+                {
+                    document.getElementById("output").innerHTML = imghttp.responseText;
+                }
+            }
+            if (id == "sunrise")
+            {
+                imghttp.open("GET", "./sunrise.html", true);
+            }
+            else if (id == "sunset")
+            {
+                imghttp.open("GET", "./sunset.html", true);
+            }
+            else if (id == night)
+            {
+                imghttp.opne("GET","./night.html", true);
+            }
+            imghttp.send();
+        }
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+    <button id="sunrise" onclick="loadDayTime()">Sunrise</button>
+    <button id="sunset" onclick="loadDayTime()">Sunset</button>
+    <button id="night" onclick="loadDayTime()">Night</button>
+    <span id="output"></span>
+</body>
+</html>
