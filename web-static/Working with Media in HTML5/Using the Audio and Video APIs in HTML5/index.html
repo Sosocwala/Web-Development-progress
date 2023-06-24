@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var player;
+        window.onload = function()
+        {
+            document.getElementById("myPlayBtn").addEventListener("click", playMusic, false);
+            document.getElementById("myStopBtn").addEventListener("click", stopMusic, false),
+            play = document.getElementById("myAudio");
+        }
+        function  playMusic()
+        {
+            play.play();
+        }
+        function stopMusic()
+        {
+
+            play.pause();
+        }
+    </script>
+</head>
+
+<body>
+    <audio id="myAudio">
+        <source src="address.mp3" type="audio/mp3">
+        <source src="address.ogg" type="audio/ogg">
+    </audio>
+    <button id="myPlayBtn">Play</button>
+    <button id="myStopBtn">Stop</button>
+</body>
+</html>
