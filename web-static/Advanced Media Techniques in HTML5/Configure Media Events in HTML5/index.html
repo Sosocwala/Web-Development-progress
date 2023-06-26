@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var player, durationOutput, myintaval, elapseOutput;
+        window.onload = function()
+        {
+            document.getElementById("playButton").addEventListener("click", playMusic, false);
+            document.getElementById("stopButton").addEventListener("click", stopMusic, false);
+            play = document.getElementById("myAudio");
+            //Audio Events
+            play.addEventListener("error", audioError, false);
+            play.addEventListener("ended", mediaEnded, false);
+            durationOutput = document.getElementById("duration");
+            elapseOutput = document.getElementById("elapsed");
+        }
+        function mediaEnded()
+        {
+            durationOutputc.innerHTML = "";
+            elapseOutput.innerHTML = "";
+            alert("Media has completed playing");
+        }
+        function audioError()
+        {
+            alert("The audio has Errored please Update to latest HTML5");
+        }
+        function playMusic()
+        {
+            play.play();
+            durationOutput.innerHTML = Math.round(play.duration);
+            myintaval = setInterval(update, 500);
+        }
+        function stopMusic()
+        {
+            play.pause();
+        }
+        function update()
+        {
+            elapseOutput.innerHTML = Math.round(play.currentTime);
+        }
+    </script>
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="address.mp3" type="audio/mp3">
+    </audio>
+
+    <button id="playButton">Play</button>
+    <button id="stopButton">Stop</button>
+
+    <P>Duration: <output id="duration"></output></P>
+    <P>Elapsed: <output id="elapsed"></output></P>
+</body>
+</html>
