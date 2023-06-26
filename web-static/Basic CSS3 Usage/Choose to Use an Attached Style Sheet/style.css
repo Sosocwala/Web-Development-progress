@@ -1,0 +1,37 @@
+html
+{
+    background-color: gray;
+}
+h1{
+    font-size: 5rem;
+    color: red;
+    font-weight: bold;
+}
+.p1para{
+    font-family: calibri;
+    font-size: 25px;
+    font-weight: 300;
+}
+.p3para{
+    font-style: italic;
+}
+.div1{
+    background-color: chartreuse;
+    width: 300px;
+    height: 300px;
+    color: white;  
+    float: left;
+}
+.div2{
+    background-color: darkgreen;
+    width: 300px;
+    height: 300px;
+    color: white;   
+}
+span
+{
+    width: 500px;
+    height: 300px;
+    color: white;
+    font-size: 39pt;
+}
