@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function()
+        {
+            var playing = 0;
+            var player;
+            playing = document.getElementById("next").addEventListener("click", nextSong, false);
+            player = document.getElementById("myAudio");
+
+        }
+        function nextSong()
+        {
+            if (playing == 0)
+            {
+                
+                player.pause();
+                player.src = "address.mp3"; 
+                player.play();
+                playing = 1;
+            }
+            else
+            {
+                player.pause();
+                player.src = "purple.mp3"; 
+                player.play();
+                playing = 0;
+            }
+        }
+    </script>
+</head>
+<body>
+   <audio id="myAudio" controls="controls" preload="preload" loop="loop" >
+    <source src="address.mp3" type="audio/mp3">
+   </audio>
+   <br>
+   <button id="next">Next</button>
+</body>
+</html>
