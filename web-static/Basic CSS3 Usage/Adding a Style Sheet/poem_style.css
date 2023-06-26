@@ -1,0 +1,13 @@
+h1, h2{
+    text-align: center;
+    color: red;
+    font-size: 30pt;
+}
+h2{
+    font-size: 15pt;
+}
+p{
+    text-align: center;
+    font-family: arial;
+    color: orange;
+}
