@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #banner{
+            width: 1300px;
+            height: 120px;
+            background-color: cornflowerblue;
+            border: 1px solid black;
+            margin-bottom: 0;
+        }
+        #main-menu ul {
+        margin: 0;
+    }
+        .p{
+            top: -10px;
+            position: absolute;
+            font-size: 16px;
+        }
+        #banner h2{
+            top: 30px;
+            position: absolute;
+        }
+        .p2{
+            top: 90px;
+            position: absolute;
+        }
+        /*main mene*/
+        #main-menu{
+            width: 250px;
+            height: 400px;
+            background-color: darkcyan;
+            color: chartreuse;
+            float: left;
+
+
+        }
+        #main-menu ul ul{
+
+            display: none;
+        }
+        #main-menu ul:hover > ul{
+            display: block;
+        }
+        #main-menu a{
+            font-size: 17px;
+            color: #ffffff;
+            text-decoration: none
+        }
+        span{
+            color: black;
+        }
+        #content{
+            background-color: coral;
+            height: 400px;
+            width: 1050px;
+            position:absolute;
+            right: 58px;
+
+            
+        }
+        #content p{
+            text-align: center;
+            font-size: 11px;
+        }
+        #links{
+            border: 1px solid black;
+            background-color: brown;
+            width: 250px;
+            height: 50px;
+        }
+        #content a{
+            text-decoration: none;
+            padding: 5px;
+            color: chocolate;
+        }
+        footer{
+            position: absolute;
+            bottom: 0%;
+            width: 1300px;
+            height: 120px;
+            background-color: darkolivegreen;
+        }
+    </style>
+</head>
+<body>
+<div id="wrapper">
+
+    <div id="banner">
+        <p class="p">Banner -</p>
+        <h2>The Rennaissance Art Collective</h2>
+        <p class="p2">Promoting Art for 30 years</p>
+    </div>
+    <div id="main-menu">
+       <span> Menu</span>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+                <ul>
+                    <li><a href="#">The Organization</a></li>
+                    <li><a href="#">The People</a></li>
+                        <ul>
+                            <li><a href="#">Our Volunteers</a></li>
+                            <li><a href="#">Our Management</a></li>
+                        </ul>
+                </ul>
+            <li><a href="#">Art</a></li>
+            <li><a href="#">COntact</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <p>Content</p>
+        <p>We are curators of many different types of art. Click the links below for more information.</p>
+        <div id="links">
+
+                <a href="#">Pastals</a>
+                <a href="#">Paints</a>
+                <a href="#">Sculpture</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Footer: Copyright the The Rennaissance Art Collective</p>
+    </footer>
+</div>
+   
+</body>
+</html>
