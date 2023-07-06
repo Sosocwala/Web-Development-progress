@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myMove{
+            width: 250px;
+            height: 255px;
+            position: relative;
+            animation: myMove 3s infinite;
+            -ms-animation: myMove 3s infinite;
+            -webkit-animation: myMove 3s infinite;
+        }
+        @keyframes myMove {
+            0% {left: 0px;}
+            25% {left: 125px;}
+            50% {left: 300px;}
+            100% {left: 450px;}
+        }
+        @-ms-keyframes myMove {
+            0% {left: 0px;}
+            25% {left: 125px;}
+            50% {left: 300px;}
+            100% {left: 450px;}
+        }
+        @-webkit-keyframes myMove {
+            0% {left: 0px;}
+            25% {left: 125px;}
+            50% {left: 300px;}
+            100% {left: 450px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="myMove"> <img src="logo.jpg" width="250px" height="155px"></div>
+</body>
+</html>
