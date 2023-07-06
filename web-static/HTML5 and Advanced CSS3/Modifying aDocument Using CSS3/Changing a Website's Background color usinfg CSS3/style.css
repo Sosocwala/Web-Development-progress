@@ -1,0 +1,24 @@
+body{
+    position: absolute;
+    left: 17%;
+    background-color: cadetblue;
+}
+.home:hover{
+    background-color: white;
+}
+.about:hover{
+    background-color: white;
+}
+.faq:hover{
+    background-color: white;
+}
+.blog:hover{
+    background-color: white;
+}
+.career:hover{
+    background-color: white;
+}
+.navbar a{
+    float: left;
+    text-align: center;
+}
