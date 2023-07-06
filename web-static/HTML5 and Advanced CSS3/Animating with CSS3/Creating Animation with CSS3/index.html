@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rock{
+            width: 200px;
+            height: 200px;
+            background-color: chocolate;
+            color: chartreuse;
+            text-align: center;
+            line-height: 200px;
+            position: relative;
+            animation: rock 5s 2;
+            -ms-animation: rock 5s 2;
+            -webkit-animation: rock 5s 2;
+        }
+        @keyframes rock {
+            from {left: 0px;}
+            to {left: 500px;}
+        }
+        @-ms-keyframes rock {
+            from {left: 0px;}
+            to {left: 500px;}
+        }
+        @-webkit-keyframes rock {
+            from {left: 0px;}
+            to {left: 500px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="rock">This is a div</div>
+</body>
+</html>
