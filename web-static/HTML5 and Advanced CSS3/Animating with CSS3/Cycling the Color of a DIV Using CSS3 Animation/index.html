@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #color{
+            width: 100px;
+            height: 100px;
+            animation: color 5s infinite;
+            -ms-animation: color 5s infinite;
+            -webkit-animation: color 5s infinite;
+        }
+        @keyframes color {
+            0% {background-color: chartreuse;}
+            25% {background-color: crimson;}
+            50% {background-color: darkgreen;}
+            75% {background-color: darkorange;}
+            100% {background-color: darkred;}
+        }
+        @-ms-keyframes color {
+            0% {background-color: chartreuse;}
+            25% {background-color: crimson;}
+            50% {background-color: darkgreen;}
+            75% {background-color: darkorange;}
+            100% {background-color: darkred;}
+        }
+        @-webkit-keyframes color {
+            0% {background-color: chartreuse;}
+            25% {background-color: crimson;}
+            50% {background-color: darkgreen;}
+            75% {background-color: darkorange;}
+            100% {background-color: darkred;}
+        }
+    </style>
+</head>
+<body>
+     <div id="color"></div>
+</body>
+</html>
