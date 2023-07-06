@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #anish{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation: anish 5s 1;
+            -ms-animation: anish 5s 1;
+            -webkit-animation: anish 5s 1;
+        }
+        @keyframes anish{
+            0% {transform: rotate(0deg); left: 0px; top: 0px; background-color: cadetblue; width: 200px; height: 100px;}
+            25% {transform: rotate(45deg); left: 300px; top: 250px; background-color: darkred; width: 300px; height: 200px;}
+            50% {transform: rotate(90deg); left: 600px; top: 500px; background-color: darkorange; width: 100px; height: 100px;}
+            75% {transform: rotate(120deg); left: 300px; top: 250px; background-color: darkred; width: 300px; height: 200px;}
+            100% {transform: rotate(360deg); left: 0px; top: 0px; background-color:cadetblue; width: 100px; height: 100px;}
+        }
+        @-ms-keyframes anish{
+            0% {transform: rotate(0deg); left: 0px; top: 0px; background-color: cadetblue; width: 200px; height: 100px;}
+            25% {transform: rotate(45deg); left: 300px; top: 250px; background-color: darkred; width: 300px; height: 200px;}
+            50% {transform: rotate(90deg); left: 600px; top: 500px; background-color: darkorange; width: 100px; height: 100px;}
+            75% {transform: rotate(120deg); left: 300px; top: 250px; background-color: darkred; width: 300px; height: 200px;}
+            100% {transform: rotate(360deg); left: 0px; top: 0px; background-color:cadetblue; width: 100px; height: 100px;}
+        }
+        @-webkit-keyframes anish{
+            0% {transform: rotate(0deg); left: 0px; top: 0px; background-color: cadetblue; width: 200px; height: 100px;}
+            25% {transform: rotate(45deg); left: 300px; top: 250px; background-color: darkred; width: 300px; height: 200px;}
+            50% {transform: rotate(90deg); left: 600px; top: 500px; background-color: darkorange; width: 100px; height: 100px;}
+            75% {transform: rotate(120deg); left: 300px; top: 250px; background-color: darkred; width: 300px; height: 200px;}
+            100% {transform: rotate(360deg); left: 0px; top: 0px; background-color:cadetblue; width: 100px; height: 100px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="anish"></div>
+</body>
+</html>
