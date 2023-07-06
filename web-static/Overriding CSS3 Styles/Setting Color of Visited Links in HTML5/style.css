@@ -42,6 +42,11 @@ a:visited{
   bottom: 20px;
   background-color: darkolivegreen;
 }
+.slogen{
+    position: absolute;
+    top: 180px;
+    left: 80px;
+}
 .slogen h1{
     font-family: arial;
     font-size: 3rem;
@@ -57,5 +62,11 @@ p{
 
 }
 .content-img{
-    text-align: right;
+    border-radius: 40px;
+    position: absolute;
+    right: 80px;
+    top: 160px;
+}
+.img{
+    border-radius: 40;
 }
