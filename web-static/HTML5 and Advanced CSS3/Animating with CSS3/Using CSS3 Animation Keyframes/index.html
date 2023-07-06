@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #solo{
+            width: 250px;
+            height: 155px;
+            background-color: darkgreen;
+            position: relative;
+            animation: solo 3s infinite;
+            -ms-animation: solo 3s infinite;
+            -webkit-animation: solo 3s infinite;
+        }
+        @keyframes solo{
+            0% {left: 0px;}
+            25% {left: 150px;}
+            50% {left: 300px;}
+            75% {left: 150px;}
+            100% {left: 0px;}
+        }
+        @-ms-keyframes solo{
+            0% {left: 0px;}
+            25% {left: 150px;}
+            50% {left: 300px;}
+            75% {left: 150px;}
+            100% {left: 0px;}
+        }
+        @-webkit-keyframes solo{
+            0% {left: 0px;}
+            25% {left: 150px;}
+            50% {left: 300px;}
+            75% {left: 150px;}
+            100% {left: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div id="solo"></div>
+</body>
+</html>
