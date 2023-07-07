@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img{
+            width: 250px;
+            height: 155px;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+        .div1{
+            width: 250px;
+            height: 155px;
+            background-color: chocolate;
+            position: absolute;
+            top: 300px;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+            z-index: 1000;
+        }
+        .div2{
+            width: 250px;
+            height: 155px;
+            background-color:darkgreen;
+            position: absolute;
+            top: 400px;
+            left: 50px;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+    </style>
+</head>
+<body>
+    <img class="img" src="sticker.jpg" alt="sticer">
+    <div class="div1"></div>
+    <div class="div2"></div>
+</body>
+</html>
