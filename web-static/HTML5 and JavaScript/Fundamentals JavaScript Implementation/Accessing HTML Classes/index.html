@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1{
+            width: 150px;
+            height: 150px;
+            background-color: crimson;
+        }
+        .class2{
+            width: 150px;
+            height: 150px;
+            background-color: lawngreen;
+        }
+    </style>
+    <script>
+        function doIt()
+        {
+          var classes =  document.getElementsByClassName("class1");
+          alert("Number of " + classes[0].className + " is " + classes.length);
+        }
+    </script>
+</head>
+<body>
+    <div class="class1" id="class1">Class 1</div><br>
+    <div class="class1" id="class1">Class 1</div><br>
+    <div class="class2" id="class2">Class 2</div><br>
+    <button id="myBtn" onclick="doIt()">Click Me</button>
+</body>
+</html>
