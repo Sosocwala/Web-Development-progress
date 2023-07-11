@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1{
+            width: 150px;
+            height: 50px;
+            background-color: crimson;
+        }
+        .class2{
+            width: 150px;
+            height: 50px;
+            background-color: lawngreen;
+        }
+    </style>
+    <script>
+        function doIt()
+        {
+          var name = document.getElementsByTagName("div");
+          for (var i = 0; i < name.length; ++i)
+          {
+            name[i].style.backgroundColor = "red";
+            name[i].style.fontFamily = "arial"
+            name[i].style.fontSize = "18px"
+            name[i].style.color = "green"
+            name[i].innerHTML = "CHANGED"
+            name[i].style.textAlign = "center"
+
+          }
+        }
+    </script>
+</head>
+<body>
+    <div class="class1" id="class1">Class 1</div><br>
+    <div class="class2" id="class2">Class 1</div><br>
+    <div class="class1" id="class1">Class 2</div><br>
+    <div class="class2" id="class2">Class 1</div><br>
+    <div class="class1" id="class1">Class 2</div><br>
+    <button id="myBtn" onclick="doIt()">Click Me</button>
+</body>
+</html>
