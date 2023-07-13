@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload() = function()
+        {
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            image = new Image();
+            image.onload = function()
+            {
+                context.drawImage(image, 10,10);
+            }
+            image.src = "beans.jpg";
+        }
+    </script>
+</head>
+<body>
+    <canvas id="myCanva" width="500" height="500"></canvas>
+</body>
+</html>
