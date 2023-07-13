@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body{
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+        }
+        #myCanva{
+            background-color: crimson;
+        }
+    </style>
+    <script>
+        window.onload = function()
+        {
+            var content = document.getElementById("myCanva").getContext("2d");
+            content.canvas.width = window.innerWidth;
+            content.canvas.height = window.innerHeight;
+        }
+    </script>
+</head>
+<body>
+    <canvas id="myCanva"></canvas>
+</body>
+</html>
