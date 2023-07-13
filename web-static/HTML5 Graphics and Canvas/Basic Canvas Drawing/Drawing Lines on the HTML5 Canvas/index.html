@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        canvas{
+            border: 1px solid  black;
+        }
+    </style>
+    <script>
+        window.onload = function()
+        {
+            var canvas = document.getElementById("myCanva")
+            var context = canvas.getContext("2d");
+
+            context.beginPath();
+            context.moveTo(100,100);
+            context.lineTo(300,300);
+            context.quadraticCurveTo(230,280,300,350);
+            context.lineTo(370, 390);
+
+            context.lineWidth = "5";
+            context.strokeStyle = "rgb(0,0,225)";
+            context.stroke();
+        }
+    </script>
+</head>
+<body>
+    <Canvas id="myCanva" width="400" height="400"></Canvas>
+</body>
+</html>
