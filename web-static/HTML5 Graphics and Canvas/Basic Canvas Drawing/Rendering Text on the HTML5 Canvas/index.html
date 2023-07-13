@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function()
+        {
+            var context = document.getElementById("myCanva").getContext("2d");
+            context.font = "italic 30pt arial";
+            context.fillStyle = "blue";
+            context.fillText("Hello from the other side", 0, 150);
+        }
+    </script>
+</head>
+<body>
+    <canvas id="myCanva" width="500" height="300"></canvas>
+</body>
+</html>
