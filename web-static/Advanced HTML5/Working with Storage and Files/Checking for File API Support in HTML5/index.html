@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function doIt()
+        {
+            if(window.file)
+            {
+                document.getElementById("output").innerHTML = "Supported by browser! <br>";
+            }
+            else
+            {
+                document.getElementById("output").innerHTML = "Not Supported.  <br>";
+            }
+            if(window.FileReader)
+            {
+                document.getElementById("output").innerHTML += "Supported by browser!  <br>";
+            }
+            else
+            {
+                document.getElementById("output").innerHTML+= "Not Supported.  <br>";
+            }
+            if(window.FileList)
+            {
+                document.getElementById("output").innerHTML += "Supported by browser!  <br>";
+            }
+            else
+            {
+                document.getElementById("output").innerHTML += "Not Supported.  <br>";
+            }
+            if(window.Blob)
+            {
+                document.getElementById("output").innerHTML += "Supported by browser!  <br>";
+            }
+            else
+            {
+                document.getElementById("output").innerHTML += "Not Supported.  <br>";
+            }
+        }
+    </script>
+</head>
+<body>
+    <button onclick="doIt()">Send</button><br>
+    <strong>HTML5 File API Objects</strong>
+    <br> <br>
+    <div class="types">
+        File <br>
+        Filereader <br>
+        Filelist <br>
+        Blob <br>
+    </div>
+    <span id="output"></span>
+</body>
+</html>
