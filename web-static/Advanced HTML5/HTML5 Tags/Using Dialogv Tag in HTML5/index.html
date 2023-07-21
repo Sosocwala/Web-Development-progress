@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #notify{
+            font-size: 20px;
+            background-color: blue;
+            width: 100;
+            height: 100;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function showIt(){
+            document.getElementById("notify").style.display = "block";
+        }
+        function closeIt()
+        {
+            document.getElementById("notify").style.display = "none";
+        }
+    </script>
+
+</head>
+<body>
+    <dialog id="notify">My nan is here
+        <br><br>
+        <button onclick="closeIt()">Exit</button>
+    </dialog>
+    <button onclick="showIt()">Show</button>
+</body>
+</html>
