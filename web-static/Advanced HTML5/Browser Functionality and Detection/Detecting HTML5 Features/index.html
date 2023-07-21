@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function doIt(){
+            var input = ["search", "number", "range", "color", "tel", "url", "email", "date", "month", "week", "time", "datetime", "date-local"];
+            //create an input element
+            var inp = document.createElement("input");
+
+            for (i = 0; i < 13; i++)
+            //set the attribute
+            {
+                inp.setAttribute("type", input[i]);
+                //text returned if its not supported
+                if (inp.type == "text")
+                {
+                    document.getElementById("output").innerHTML += "&lt;input type='" + input[i] + "&gt;: NO" + "<br>"
+                }
+                els
+                {
+                    document.getElementById("output").innerHTML += "&lt;input type='" + input[i] + "&gt;: Yes" + "<br>"
+                }
+            }
+        }
+    </script>
+    <style>
+        #types{
+            float: left;
+            padding: 10px;
+        }
+        #output{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <button id="go" onclick="doIt()">Go</button> <br> <br>
+    <strong>New HTML5 Input Types:</strong>
+    <div id="types">
+        Search Boxesbre <br>
+        Spinboxes <br>
+        Sliders <br>
+        color picker <br>
+        Telephone Numbers <br>
+        Web addresses <br>
+        Email addresses <br>
+        Calendarmdate pickers <br>
+        Months <br>
+        Weeks <br>
+        Timestamps <br>
+        Precise date + time stamps <br>
+        local dates and times <br>
+    </div><br>
+    <div id=" output  "></div>
+  
+</body>
+</html>
