@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function doIt()
+        {
+            var  w = window.screen.availWidth;
+            var h = window.screen.availHeight;
+            document.getElementById("output").innerHTML = "Width: " + w + "Height: " + h;
+        }
+    </script>
+</head>
+<body>
+    <button id="btn" onclick="doIt()">Check</button><br><br>
+    <span id="output"></span>
+</body>
+</html>
