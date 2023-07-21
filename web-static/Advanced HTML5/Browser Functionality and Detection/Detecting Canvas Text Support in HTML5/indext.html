@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Script>
+        function doIt()
+        {
+            var canvas = document.createElement("canvas");
+            var context = canvas.getContext("2d");
+            var suppText = typeof context.fillText;
+            if (suppText == "function")
+            {
+                outpuText = "Congradulations yor browser supports HTML5";
+            }
+            else
+            {
+                outpuText = "Sorry the browser doesnt support latest version please upgrade";
+            }
+            document.getElementById("output").innerHTML = outpuText;
+        }
+    </Script>
+</head>
+<body>
+    <button id="btn" onclick="doIt()">GO</button><br><br>
+    <span id="output"></span>
+</body>
+</html>
