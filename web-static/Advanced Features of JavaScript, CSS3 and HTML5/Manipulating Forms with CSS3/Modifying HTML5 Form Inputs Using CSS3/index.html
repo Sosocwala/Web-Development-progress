@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            font-family: calibri;
+            width: 200px;
+            padding-bottom: 10px;
+        }
+        #username{
+            background-color: cadetblue;
+            color: white;
+        }
+    </style>
+    <script>
+        function doIt() {
+            var user = document.getElementById("username").value;
+            var pwd = document.getElementById("pwd").value;
+            document.getElementById("output").innerHTML = 
+            "Username: " + user + "<br>" + "Password: " + pwd;
+        }
+    </script>
+</head>
+<body>
+    Username: <input type="text" id="username"><br>
+    Password: <input type="password" id="pwd"><br>
+    <button onclick="doIt()">Submit</button><br>
+    <span id="output"></span>
+</body>
+</html>
