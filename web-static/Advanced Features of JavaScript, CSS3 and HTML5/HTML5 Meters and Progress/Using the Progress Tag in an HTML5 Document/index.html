@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function doIt() {
+            var inc = 0;
+            var letsGo = setInterval(proprocess, 50)
+            function proprocess(){
+                ++inc;
+                if (inc > 100){
+                    document.getElementById("output").innerHTML = "Done!"
+                }else{
+                    document.getElementById("output").innerHTML = inc + "%";
+                    document.getElementById("pro").value = inc;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <progress id="pro" min="0" max="100" value="0" style="width: 300px;"></progress>
+    <span id="output"></span><br>
+    <button onclick="doIt()">Submit</button>
+</body>
+</html>
