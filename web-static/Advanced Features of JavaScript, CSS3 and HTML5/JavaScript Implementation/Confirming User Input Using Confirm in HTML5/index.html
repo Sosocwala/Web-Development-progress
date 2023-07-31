@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function confirmMe(){
+            var results = "";
+            var asure = confirm("would you like to Continue?");
+            if (asure == true){
+                results = "Proceeding";
+            }else{
+                results = "Cancelling";
+            }
+            document.getElementById("output").innerHTML = results;
+        }
+    </script>
+</head>
+<body>
+    <input type="button" onclick="confirmMe()" value="Submit" ><br><br>
+    <span id="output"></span>
+</body>
+</html>
