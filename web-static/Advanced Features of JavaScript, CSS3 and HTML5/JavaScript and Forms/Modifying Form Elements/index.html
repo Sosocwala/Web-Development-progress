@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function doIt() {
+            var temp = document.forms[0];
+            temp[1].value = "19 Kings Park";
+            temp[4].value = "Go";
+        }
+    </script>
+</head>
+<body>
+    <form >
+        <label>Name:</label><br>
+        <input type="text"><br>
+        <label>Address:</label><br>
+        <input type="text"><br>
+        <label>Email:</label><br>
+        <input type="email"><br>
+        <label>Phone:</label><br>
+        <input type="text"><br>
+    </form><br>
+    <button onclick="doIt()">Submit</button><br><br>
+</body>
+</html>
