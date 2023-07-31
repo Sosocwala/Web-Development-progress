@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function promting(){
+            var results = prompt("Wha is your Name?");
+            document.getElementById("output").innerHTML = "Welcome to our website, " + results + "!";
+        }
+    </script>
+</head>
+<body>
+    <p>Press Submit to Continue</p><br>
+    <input type="button" name="btn" id="btn" onclick="promting()" value="Submit"><br><br>
+    <span id="output"></span>
+</body>
+</html>
