@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1{
+            width: 250px;
+            height: 150px;
+            background-color: chartreuse;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function openDiv(box) {
+            alert(box.id);
+        }
+        function dbclic(dbl) {
+            alert(dbl.type);
+        }
+        function swap(file) {
+            alert(file);
+        }
+    </script>
+</head>
+<body>
+    <div id="div1" onclick="openDiv(this)"></div><br><br>
+    <input type="submit" value="Submit" id="btn" ondblclick="dbclic(this)"><br><br>
+    <input type="file" name="file" id="file" onchange="swap(this)">
+</body>
+</html>
