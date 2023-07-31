@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function doIt() {
+            var val = document.getElementById("ranger").value;
+            document.getElementById("output").innerHTML = val;
+            document.getElementById("meter").value = val;
+            
+        }
+    </script>
+</head>
+<body>
+    <meter id="meter" min="0" max="100" value="50" style="width: 300px; height: 40px"></meter><br>
+    <input type="range" min="0" max="100" id="ranger" onchange="doIt()" >
+    <span id="output"></span>
+</body>
+</html>
