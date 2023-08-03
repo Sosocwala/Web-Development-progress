@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       var someObjects = function(){
+            this.property1 = "I am what i said im what i iam";
+            this.property2 = "I will continuasly evolve";
+       } 
+       someObjects.prototype.printProp1 = function(){
+            console.log(this.property1);
+       }
+       someObjects.prototype.printProp2 = function(){
+            console.log(this.property2);
+       }
+       var myObject = new someObjects();
+       myObject.printProp1();
+       myObject.printProp2();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
