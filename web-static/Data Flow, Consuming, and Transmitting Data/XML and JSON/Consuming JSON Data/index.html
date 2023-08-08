@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="doIt()">Send</button><br>
+    <span id="output"></span>
+
+    <script>
+        function doIt(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if (this.readyState == 4 && this.status == 200){
+                    var response = json.parse(this.responseText);
+                    document.getElementById("output").innerHTML = 
+                    response.fistName + " " + response.lastName;
+                }
+            }
+            xhttp.open("GET", "ping.json");
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

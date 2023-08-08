@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var someObjects = function(a, b){
+            this.propertyOne = a;
+            this.propertyTwo = b;
+        }
+        someObjects.prototype.prop1 = function(){
+            console.log(this.propertyOne, this.propertyTwo);
+        }
+        someObjects.prototype.prop2 = function(){
+            console.log(this.propertyOne, this.propertyTwo);
+        }
+        x = new someObjects("Yamkela", "Sonqishe");
+        x.prop1();
+        z = new someObjects("Awomi", "Sonqishe");
+        z.prop2();
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

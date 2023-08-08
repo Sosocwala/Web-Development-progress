@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+ <p id="demo"></p>
+
+ <script>
+    var seasons = ["Spring", "Summer", "Winter", "Otom"];
+    var text = "";
+
+    for (i = 0; i < seasons.length; i++){
+        if (seasons[i].startsWith("S")){
+            text += seasons[i] + "<br>";
+        }else{
+            text += "<strike>" + seasons[i] + "<strike> <br>";
+        }
+        switch (seasons[i]){
+            case "Spring":
+                text += "Season 1 + <br>"
+                break; 
+            case "Summer":
+                text += "Season 2 + <br>"
+                break; 
+            case "Winter":
+                text += "Season 3 + <br>"
+                break; 
+            case "Otom":
+                text += "Season 4 + <br>"
+                break; 
+        }
+    }
+    document.getElementById("demo").innerHTML = text;
+</script>
+</body>
+</html>
