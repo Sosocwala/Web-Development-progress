@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a{
+            display: block;
+        }
+    </style>
+    <script>
+        function WebSocketOpen(){
+            var ws;
+            if ("Webocket" in window){
+                ws = new WebSocket("ping/echo/json");
+
+                ws.onopen = function(){
+                    alert("The Socket is now open");
+                }
+
+                ws.onclose = function(){
+                    alert("The socket is now closed");
+                }
+            }else{
+                alert("Web Socket not supported");
+            }        
+        }
+        function WebSocketSend(){
+            ws.send("Hellow World");
+        }
+
+        function WebSocketClose(){
+            ws.close();
+        }
+    </script>
+</head>
+<body>
+    <a href="javascript:WebSocketOpen()"> Open WebSocket</a>
+    <a href="javascript:WebSocketSend()"> Send WebSocket</a>
+    <a href="javascript:WebSocketClose()"> Close WebSocket</a>
+</body>
+</html>
